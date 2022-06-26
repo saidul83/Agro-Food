@@ -3,13 +3,13 @@
         text-align: center;
     }
     .my-count{
-        padding-left: 105px;
+        padding-left: 160px;
     }
     .navbar-brand img {
         width: 200px;
     }
     .header h1 {
-        width: 85%;
+        width: 70%;
         font-size: 32px;
     }
     .header h1 span {
@@ -28,5 +28,127 @@
         padding: 95px 0 50px;
         min-height: 485px;
     }
+    .single-service {
+        padding: 9px 20px;
+    }
 
+    /*====================================================
+            End Header Responsive Area
+    ======================================================*/
+    .sec h2 {
+       font-size: 28px;
+    }
+    .sec p {
+        width: 95%;
+        padding-bottom: 10px;
+    }
+
+    /*=============================================
+            End Sectiob Responsive area
+    ===============================================*/
+
+    .single-feature .d-flex.justify-content-between:nth-child(3) {
+        margin-bottom: 70px;
+    }
+    .mid-img img {
+        margin-bottom: 90px;
+    }
+
+    /*==============================================================
+                End Single Service Responsive Area
+    ================================================================*/
+
+    .our-service {
+        margin-top: -320px;
+    }
+
+
+    .our-service .nav-tabs .nav-link {
+        padding: 5px 10px;
+    }
+    .nav-tabs .nav-link.active::before{
+        
+        width: 30px;
+        height: 30px;
+        bottom: -15px;
+        left: 40%;
+        transform: rotate(45deg);    
+    }
+
+    /*==============================================================
+                End Our Service Responsive Area
+    ================================================================*/
+    .img-text h2 {
+        width: 96%;
+        font-size: 30px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .btn-on {
+        font-size: 15px;
+        padding: 8px 20px;
+        margin-left: 152px;
+    }
+
+     /*==============================================================
+                End Tab Responsive Area
+    ================================================================*/
+
+    .sec {
+        margin-top: 80px;
+    }
+    .gallery img {
+        margin-bottom: 50px;
+    }
+    .sec-15{
+        margin-top: -150px;
+    }
+    
+    .sec-16{
+        margin-top: -100px;
+    }
+
+      /*==============================================================
+                End Tab Responsive Area
+    ================================================================*/
+    .link{
+        padding: 30px;
+    }
+    .link h2{
+        font-size: 19px;
+        width: 100%;
+    }
+    .btn-last {
+        padding: 8px 20px;
+        margin-left: 147px;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    /*==============================================================
+                End Tab Responsive Area
+    ================================================================*/
+
+    .foot-1 a h3{
+        text-align: center;
+    }
+    .last-5 h4{
+        text-align: center;
+    }
+    .ul-style li {
+        margin-right: 10px;
+        width: 30%;
+    }
+    .ul-style li a img {
+        height: 100px;
+        width: 110px
+    }
+    .list-5 {
+        text-align: center;
+    }
+    .end-area p {
+        margin: 0px 110px;
+        font-size: 16px;
+        width: 100%;
+    }
+    
 }
