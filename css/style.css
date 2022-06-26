@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 /*=============================================
         Common Style
 ===============================================*/
@@ -22,8 +23,8 @@
 body{
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-}/*
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');*/
+}
+
 
 /*=============================================*/
 .header-top{
@@ -207,37 +208,46 @@ box-shadow: 1px 16px 65px 0px rgba(0,0,0,1);*/
 /*==================================
         End Feature CSS
 ====================================*/
-
-.icon{
+.our-service{
+    background: #f6f6f6;
+}
+.our-service .nav-tabs .nav-link{
     background: #fff;
-    padding-top: 10px;
-    margin-bottom: 100px;
-    
+    margin-right: 30px;
+    color: #121821;
+    border-radius: 5%;
+    padding: 20px 30px;
 }
-.icon img{
-    padding: 20px 15px;
+.nav-tabs{
+    border-bottom: 1px solid transparent;
+    margin-bottom: 150px;
+  
 }
-.icon h4{
-    margin-top: 10px;
+.nav.nav-tabs img{
+    display: block;
+    margin-bottom: 20px;
 }
-.icon-1{
-    background: #fff;
-    padding: 10px 15px;
+.nav-tabs .nav-link.active{
+    background: #1e4103;
+    color: #fff;
+    position: relative;
 }
-.icon-1 h4{
-    margin-top: 20px;
-}
-.bg h4{
-    padding-left: 20px;
+.nav-tabs .nav-link.active::before{
+    position: absolute;
+    background: #1e4103;
+    content: "";
+    width: 30px;
+    height: 30px;
+    bottom: -15px;
+    left: 40%;
+    transform: rotate(45deg);
+   
 }
 /*============================================
             End Icon Stytle
 ==============================================*/
 
-.my-photo{
-    width: 100%;
-    margin-bottom: 30px;
-}
+
 .img-text h2{
     width: 100%;
     font-size: 65px;
@@ -277,53 +287,132 @@ box-shadow: 1px 16px 65px 0px rgba(0,0,0,1);*/
 .gallery{
     margin-bottom: 200px;
 }
-.img-1{
-    width: 100%;   
-}
-.img-3{
-    padding-left: 10px;
-}
-.img-2{
+.gallery img{
     width: 100%;
-    margin-top: 30px;
+}
+.gall-pic{
+    margin-bottom: 30px;
+    position: relative;
+}
+.gallery-posi{
+    position: relative;
+}
+.gallery-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    
+}
+.gallery-posi:hover .gallery-text{
+    visibility: visible;
+    background: transparent;
+}
+.gallery-posi::before{
+    position:absolute;
+    content: '';
+    width: 100%;
+    height: 0%;
+    background: #4aa406;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    opacity: 0.3;
+}
+.gallery-posi:hover::before{
+    height: 100%;
+    transition: 1s;
+    opacity: 0.3;
+}
+.gall-pic::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0;
+    background: #1e4103;
+    top: 0;
+    left: 0;
+    transition: 1.5s;
+    opacity: 0.3;
+}
+.gall-pic:hover::before{
+    height: 100%;
+    transition: 1.5s;
 }
 
 /*=============================================
         End Image Part CSS
 ===============================================*/
-
-.feedback{
+.feedback-1{
     margin-bottom: 100px;
 }
-.single-feedback img{
-    width: 100%;
-}
-.single-feedback{
+.video-area{
+   
+    background: url('../images/feed.png');
     min-height: 440px;
+    background-repeat: repeat;
+    background-size: cover;
     position: relative;
+    
 }
-.single-feedback::before{
+.video-area::before{
     position: absolute;
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
+    background: #121821;
     top: 0;
     left: 0;
-    background: #121821;
     opacity: 0.4;
 }
-.single-feed{
-    padding: 130px 0 50px 80px;
+.fa-play{
+    position: absolute;
+    contain: '';
+    top: 45%;
+    left: 45%;
+    padding: 18px 21px;
+    font-size: 20px;
+    color: #fff;
+    background: #4aa406;
+    border-radius: 50%;
 }
-.clients{
-    padding: 20px 0 10px 100px;
+.slider-client{
+    background: #f6f6f6;
+    min-height: 440px;
+    
+    margin-left: -31px;
+    margin-right: 0;
+    position: relative;
 }
-.text-001{
-    padding-left: 20px;
+.slider{
+    margin-bottom: 20px;
+    padding: 110px 0 0 30px;
 }
-.text-001 span{
+.client-img{
+    margin-right: 30px;
+}
+.client-text h5{
+    font-size: 20px;
+    font-weight: 700;
+}
+.client-text span{
     color: #4aa406;
+    font-size: 18px;
 }
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #4aa406;
+    
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots{
+    position: absolute;
+    top: 70px;
+    left: 40%;
+}
+
+
+
 
 /*====================================
         End Feedback CSS
@@ -352,17 +441,168 @@ box-shadow: 1px 16px 65px 0px rgba(0,0,0,1);*/
             End Link CSS
 =================================================*/
 
+.owl-carousel .owl-item img{
+    padding: 100px 50px;
+    margin-bottom: 20px;
+    background: #f6f6f6;
+}
+.icon-slider img{
+    transform: scale(0.95);
+    transition: 0.5s;
+}
+.icon-slider img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+/*=========================================
+=============================================*/
+
 .footer{
     background: url(../images/Footer-Area.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 800px;
-  
+    min-height: 650px;
+
 }
-.icon-11{
-    padding-top: 80px;
-    margin-bottom: 80px;
+.foot-1{
+    margin-bottom: 100px;
 }
-.icon-11 img{
-    width: 100%;
+.last-5{
+    margin-bottom: 100px;
+}
+.list-5{
+    margin-bottom: 100px;
+}
+.foot-1 a h3{
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    color: #121821;
+}
+.foot-1 a h3 span{
+    font-weight: 700;
+}
+.foot-1 p{
+    text-align: justify;
+    
+    padding-bottom: 7px;
+}
+.foot-1 a{
+    text-decoration: none;
+    color: #5b6471;
+}
+.foot-1 a i{
+    padding-top: 10px;
+}
+.fa-phone-flip,.fa-envelope,.fa-location-dot,.fa-globe{
+    padding-right: 5px;
+}
+/*=====================================================*/
+.last-5 h4{
+    margin-top: 15px;
+    font-weight: 400;
+}
+.last-5 h4 span{
+    font-weight: 700;
+}
+ul{
+    padding-left: 0;
+}
+.ul-style{
+    padding-top: 50px;
+}
+.ul-style li{
+    list-style-type: none;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    width: 28%;
+    float: left;
+}
+.ul-style li a img{
+    height: 90px;
+    width: 80px;
+    transform: scale(.95);
+    transition: 0.5s;
+}
+
+.ul-style li a img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.ul-style li:nth-child(3), .ul-style li:nth-child(6), .ul-style li:nth-child(9){
+    margin-right: 0;
+}
+.blog{
+    margin-bottom: -45px;
+    margin-top: 60px;
+}
+.blog-img{
+    width: 30%;
+    transition: 0.5s;
+    transform: scale(.95);
+}
+.blog-img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.blog-img a img{
+    width: 90px;
+    height: 90px;
+}
+.blog-text {
+    margin-left: 20px;
+    
+}
+.blog-text p{
+    margin-bottom: 0;
+}
+.blog-text p a{
+    color: #121821;
+    
+}
+.blog-text p a:hover{
+    text-decoration: none;
+   
+}
+.blog-text span{
+    color: #5b6471;
+}
+.list-5{
+    margin-top: 15px;
+}
+.list-5 h4{
+    font-weight: 400;
+}
+.list-5 h4 span{
+    font-weight: 700;
+}
+.last-10 {
+    margin-top: 55px;
+}
+.last-10 li{
+    list-style-type: none;
+    margin-bottom: 11px;
+}
+.last-10 li a{
+    color: #5b6471;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.last-10 li a:hover{
+    text-decoration: none;
+    padding-left: 20px;
+    transition: 0.5s;
+}
+
+.end-area{
+    border-top: 2px solid #d4e6c6;
+    
+}
+.end-area p{
+    margin: 0 350px;
+    font-size: 25px;
+    color: #797e85;
+    padding: 35px 0 30px;
 }
