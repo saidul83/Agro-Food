@@ -128,7 +128,7 @@ box-shadow: 1px 16px 65px 0px rgba(0,0,0,1);*/
     background: #fff;
     -webkit-box-shadow: 1px 16px 51px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 1px 16px 51px 0px rgba(0,0,0,0.1);
-    box-shadow: 1px 16px 51px 0px rgba(0,0,0,0.1);
+    box-shadow: /*1px 16px 51px 0px rgba(0,0,0,0.1)*/ #efefef;
     cursor: pointer;
     transition: .5s;
     margin-bottom: 30px;
@@ -606,3 +606,4 @@ ul{
     color: #797e85;
     padding: 35px 0 30px;
 }
+

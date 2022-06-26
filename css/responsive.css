@@ -1,0 +1,32 @@
+@media only screen and (max-width: 767px) {
+    .header-top p {
+        text-align: center;
+    }
+    .my-count{
+        padding-left: 105px;
+    }
+    .navbar-brand img {
+        width: 200px;
+    }
+    .header h1 {
+        width: 85%;
+        font-size: 32px;
+    }
+    .header h1 span {
+        font-size: 27px;
+    }
+    .btn-active {
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+    .btn-off {
+        font-size: 15px;
+        padding: 5px 15px;
+        margin-right: 0;
+    }
+    .header {
+        padding: 95px 0 50px;
+        min-height: 485px;
+    }
+
+}
