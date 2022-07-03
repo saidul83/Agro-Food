@@ -3,13 +3,13 @@
         text-align: center;
     }
     .my-count{
-        padding-left: 160px;
+        padding-left: 100px;
     }
     .navbar-brand img {
         width: 200px;
     }
     .header h1 {
-        width: 70%;
+        width: 82%;
         font-size: 32px;
     }
     .header h1 span {
@@ -28,6 +28,9 @@
         padding: 95px 0 50px;
         min-height: 485px;
     }
+    .navbar-brand img {
+        width: 150px;
+    } 
     .single-service {
         padding: 9px 20px;
     }
@@ -87,7 +90,7 @@
     .btn-on {
         font-size: 15px;
         padding: 8px 20px;
-        margin-left: 152px;
+        margin-left: 100px;
     }
 
      /*==============================================================
@@ -115,12 +118,12 @@
         padding: 30px;
     }
     .link h2{
-        font-size: 19px;
+        font-size: 13px;
         width: 100%;
     }
     .btn-last {
-        padding: 8px 20px;
-        margin-left: 147px;
+        padding: 8px 14px;
+        margin-left: 70px;
         margin-top: 10px;
         font-size: 15px;
     }
@@ -146,9 +149,12 @@
         text-align: center;
     }
     .end-area p {
-        margin: 0px 110px;
+        margin: 0px 65px;
         font-size: 16px;
         width: 100%;
     }
+    .img-text h2 span {
+        font-size: 22px;
+      }
     
 }
